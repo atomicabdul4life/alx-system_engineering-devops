@@ -5,13 +5,13 @@ sudo apt-get -y install haproxy
 sudo chown  $USER:$USER /etc/haproxy/haproxy.cfg
 
 echo "
-frontend maxton4life
+frontend atomicabdul4life
     bind *:80
     mode http
     default_backend app
 backend app
     balance roundrobin
-    server 27205-web-01 44.200.111.35:80 check
-    server 27205-web-02 3.238.84.38:80 check" >> /etc/haproxy/haproxy.cfg
+   34237-web-01  18.206.214.193:80 check
+   34237-web-02  54.89.30.22:80 check" >> /etc/haproxy/haproxy.cfg
 
 sudo service haproxy restart
