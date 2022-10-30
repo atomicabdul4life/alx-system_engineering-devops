@@ -18,3 +18,4 @@ if [ -z "$2" ]; then
     done
 else
     get_domain "$1" "$2"
+fi
